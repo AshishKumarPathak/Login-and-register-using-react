@@ -3,6 +3,10 @@ import { Form, Alert } from "react-bootstrap";
 import Login from "./Login";
 
 function Registration() {
+  
+
+
+ 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -42,7 +46,9 @@ function Registration() {
   return (
     <>
  
-        <div>
+        <div  className="outer">
+        <div  className="inner">
+          
           {" "}
           {login ? (
             <form onSubmit={handleFormSubmit}>
@@ -120,9 +126,11 @@ function Registration() {
             <Login />
           )}
         </div>
+        </div>
     
     </>
   );
+  
 }
 
 export default Registration;
